@@ -15,16 +15,22 @@ This project is a backend based on **ASP.NET Core** for managing various entitie
 Follow these steps to install and run the project on your local environment:
 
 1. **Clone the repository**  
-   `git clone <URL_OF_THE_REPOSITORY>`
-   `cd <DIRECTORY_NAME>`
+```bash
+   git clone https://github.com/Felix-Medrano/Fullstack-Test.git
+   cd /path/to/your/directory
+```
 
-2. **Restore NuGet packages**  
-   `dotnet restore`
+3. **Restore NuGet packages**  
+```bash
+   dotnet restore
+```
 
-3. **Run the project**  
-   `dotnet run`
+5. **Run the project**  
+```bash
+   dotnet run
+```
 
-4. **Access the Swagger documentation at:**  
+7. **Access the Swagger documentation at:**  
    `http://localhost:5049/swagger/index.html`
 
 ## 📚 API Endpoints
@@ -88,21 +94,27 @@ GET    | /Placeholder/GetUserByEmail/{email} | Gets a user by its email.
 
 This project includes automatically generated documentation with Swagger, where you can explore and test all endpoints.
 Access it at:
-http://localhost:5049/swagger/index.html
+`http://localhost:5049/swagger/index.html`
 🤝 Contributions
 If you want to contribute to the project:
 1.
 Fork the repository.
 2.
-Create a new branch:  
+Create a new branch:
+```bash
 git checkout -b feature/new-feature
+```
 3.
-Make your changes and commit your contributions:  
+Make your changes and commit your contributions:
+```bash
 git commit -m "Add new feature"
-4.
-Push your changes to your fork:  
-git push origin feature/new-feature
+```
 5.
+Push your changes to your fork:
+```bash
+git push origin feature/new-feature
+```
+6.
 Open a Pull Request in the original repository.
 
 ### 📝 License
