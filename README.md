@@ -95,27 +95,24 @@ GET    | /Placeholder/GetUserByEmail/{email} | Gets a user by its email.
 This project includes automatically generated documentation with Swagger, where you can explore and test all endpoints.
 Access it at:
 `http://localhost:5049/swagger/index.html`
-🤝 Contributions
+
+### 🤝 Contributions
+
 If you want to contribute to the project:
-1.
-Fork the repository.
-2.
-Create a new branch:
+1. Fork the repository.
+2. Create a new branch:
 ```bash
 git checkout -b feature/new-feature
 ```
-3.
-Make your changes and commit your contributions:
+3. Make your changes and commit your contributions:
 ```bash
 git commit -m "Add new feature"
 ```
-5.
-Push your changes to your fork:
+5. Push your changes to your fork:
 ```bash
 git push origin feature/new-feature
 ```
-6.
-Open a Pull Request in the original repository.
+6. Open a Pull Request in the original repository.
 
 ### 📝 License
 
