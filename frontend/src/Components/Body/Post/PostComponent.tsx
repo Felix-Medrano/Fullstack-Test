@@ -2,12 +2,11 @@ import { useFetch } from '../../../Fetchs/useFetch';
 import './PostComponent.css';
 
 function PostComponent() {
-  const { data, loading, error, handleCancelRequest } = useFetch("http://localhost:5000/Placeholder/GetAllPosts");
+  const { data, loading, error } = useFetch("http://localhost:5000/Placeholder/GetAllPosts");
 
   return (
     <div className="container">
       <h2>Posts</h2>
-      <button onClick={handleCancelRequest}>Cancel Request</button>
       <div className="card">
         <ul>
           {loading && <li>Loading...</li>}

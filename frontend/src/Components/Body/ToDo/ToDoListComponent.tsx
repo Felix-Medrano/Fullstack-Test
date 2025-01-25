@@ -7,7 +7,6 @@ function ToDoListComponent() {
   return (
     <div className="container">
       <h2>To Do List</h2>
-      <button onClick={handleCancelRequest}>Cancel Request</button>
       <div className="card">
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}

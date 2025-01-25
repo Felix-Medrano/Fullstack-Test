@@ -4,11 +4,9 @@ export function useFetch<T>(url: string) {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [controller, setController] = useState(null);
 
   useEffect(() => {
     const abortController = new AbortController();
-    setController(abortController);
     setLoading(true);
     fetch(url, { signal: abortController.signal })
       .then((res) => {
@@ -32,11 +30,5 @@ export function useFetch<T>(url: string) {
     return () => abortController.abort();
   }, [url]);
 
-  const handleCancelRequest = () => {
-    if (controller == null) return;
-    controller.abort();
-    setError("Request cancelled");
-  };
-
-  return { data, loading, error, handleCancelRequest };
+  return { data, loading, error };
 }
