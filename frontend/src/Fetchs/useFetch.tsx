@@ -3,12 +3,11 @@ import { useEffect, useState } from "react";
 export function useFetch<T>(url: string) {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | "">("");
 
   useEffect(() => {
-    const abortController = new AbortController();
     setLoading(true);
-    fetch(url, { signal: abortController.signal })
+    fetch(url)
       .then((res) => {
         if (!res.ok) {
           setError(`HTTP error! status: ${res.status}`);
@@ -18,16 +17,11 @@ export function useFetch<T>(url: string) {
       })
       .then((data) => { setData(data); })
       .catch((err) => {
-        if (err.name === "AbortError") {
-          console.log("Request was cancelled")
-        }
-        else {
           setError(err.message);
-        }
+
       })
       .finally(() => { setLoading(false); });
 
-    return () => abortController.abort();
   }, [url]);
 
   return { data, loading, error };
