@@ -173,7 +173,7 @@ The `create-component.js` script is a utility tool designed to streamline the cr
 
 ### Description:
 
-- name: The simple name of the component. The script automatically appends the suffix Component. For example, if you provide 'ABC', it will create ABCComponent folder, ABCComponent.tsx, ABCComponent.css.
+- name: The simple name of the component. The script automatically appends the suffix Component. For example, if you provide 'ABC', it will create ABC folder, ABCComponent.tsx, ABCComponent.css.
 
 - path (optional): Specifies the path where the component should be created, e.g., ./src/components. If the directory does not exist, it will be created. If no path is provided, the component will be created in the default path shown in the console.
 
