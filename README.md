@@ -123,7 +123,7 @@ This project is the frontend part of the Fullstack-Test application. It is built
 
 To start the local server for the frontend, follow these steps:
 
-1. Make sure you have ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white) installed on your machine.
+1. Make sure you have [![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/) installed on your machine.
 2. Open a terminal and navigate to the frontend project directory.
 3. Run the following command to install the dependencies:
 ```Bash
