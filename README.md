@@ -30,7 +30,7 @@ Follow these steps to install and run the project on your local environment:
    dotnet run
 ```
 7. **Access the Swagger documentation at:**  
-   `http://localhost:5049/swagger/index.html`
+   `http://localhost:5000/swagger/index.html`
 
 ## 📚 API Endpoints
 
@@ -93,7 +93,7 @@ GET    | /Placeholder/GetUserByEmail/{email} | Gets a user by its email.
 
 This project includes automatically generated documentation with Swagger, where you can explore and test all endpoints.
 Access it at:
-`http://localhost:5049/swagger/index.html`
+`http://localhost:5000/swagger/index.html`
 
 ### 🤝 Contributions
 
@@ -174,6 +174,7 @@ The `create-component.js` script is a utility tool designed to streamline the cr
 ### Description:
 
 -name: The simple name of the component. The script automatically appends the suffix Component. For example, if you provide 'ABC', it will create ABCComponent folder, ABCComponent.tsx, ABCComponent.css.
+
 -path (optional): Specifies the path where the component should be created, e.g., ./src/components. If the directory does not exist, it will be created. If no path is provided, the component will be created in the default path shown in the console.
 
 ---
