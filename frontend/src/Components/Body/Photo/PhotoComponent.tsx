@@ -6,7 +6,7 @@ function PhotoComponent() {
 
   return (
     <div className="container">
-      <h2>Posts</h2>
+      <h2 className="componentTitle">Photos</h2>
       <div className="card">
         <ul>
           {loading && <li>Loading...</li>}

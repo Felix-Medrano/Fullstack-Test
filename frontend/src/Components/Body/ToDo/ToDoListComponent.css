@@ -1,1 +1,52 @@
+.componentTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
 
+.todo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+  background-color: #00ff3c57;
+}
+
+.not-completed {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.filter-controls {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-controls select,
+.filter-controls input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filter-controls input {
+  flex-grow: 1;
+  max-width: 300px;
+}

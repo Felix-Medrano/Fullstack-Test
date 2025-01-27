@@ -1,3 +1,47 @@
-.album {
-  /* Estilos para el componente AlbumComponent */
+.searchControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#searchType {
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.searchInput {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.searchButton {
+  padding: 5px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 10px;
 }

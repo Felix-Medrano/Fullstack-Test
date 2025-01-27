@@ -6,7 +6,7 @@ import "./CommentComponent.css";
 
     return (
       <div className="container">
-        <h2>Posts</h2>
+        <h2 className="componentTitle">Comments</h2>
         <div className="card">
           <ul>
             {loading && <li>Loading...</li>}

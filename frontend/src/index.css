@@ -11,6 +11,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
 }
 
 a {
@@ -22,12 +24,32 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+.componentTitle {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  margin-left: 0;
+}
+
+.marginless {
   margin: 0;
+}
+
+.bottomMargin10 {
+  margin-bottom: 10px;
+}
+
+.bottomMargin20 {
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0 2%;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 h1 {

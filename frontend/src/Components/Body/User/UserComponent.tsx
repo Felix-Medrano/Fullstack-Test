@@ -6,16 +6,16 @@ import "./UserComponent.css";
 
     return (
       <div className="container">
-        <h2>Posts</h2>
+        <h2 className="componentTitle">Users</h2>
         <div className="card">
           <ul>
             {loading && <li>Loading...</li>}
             {error && <li>Error: {error}</li>}
             {data && data.map((post) => (
-              <li key={post.id}>
-                <h3>{post.name}</h3>
-                <p>{post.userName}</p>
-                <p>{post.email}</p>
+              <li key={post.id} className="bottomMargin10">
+                <h3 className="marginless">{post.name}</h3>
+                <p className="marginless">{post.username}</p>
+                <p className="marginless">{post.email}</p>
               </li>
             ))}
           </ul>

@@ -6,7 +6,7 @@ function PostComponent() {
 
   return (
     <div className="container">
-      <h2>Posts</h2>
+      <h2 className="componentTitle">Posts</h2>
       <div className="card">
         <ul>
           {loading && <li>Loading...</li>}

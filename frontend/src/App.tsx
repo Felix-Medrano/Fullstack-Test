@@ -11,11 +11,11 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <div>
+      <div className="appContainer">
         {/* Renderizar el Header siempre */}
         <Header />
 
-        {/* Configuración de rutas */}
+        {/* Configuraciï¿½n de rutas */}
         <Routes>
           <Route path="/" element={<h2>Bienvenido</h2>} />
           <Route path="/albums/" element={<Album />} />
